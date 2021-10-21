@@ -10,6 +10,7 @@ Unfortunately, I did not have time to learn about and implement requirements for
 # Requirements
 - Docker
 - Gradle 7.2
+- JDK 11+
 
 # Instructions
 1. Download the zip and extract. 
