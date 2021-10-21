@@ -1,7 +1,7 @@
 package io.lightfeather.springtemplate.dto;
 
 public class Supervisors {
-
+    //Attributes
     private int id;
     private String phone;
     private String jurisdiction;
@@ -9,6 +9,7 @@ public class Supervisors {
     private String firstName;
     private String lastName;
 
+    //Getters
     public int getId() {
         return this.id;
     }

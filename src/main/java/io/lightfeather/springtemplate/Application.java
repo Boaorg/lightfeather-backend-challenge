@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application {
 
+  //WebClient.Builder Bean
   @Bean
   public WebClient.Builder webClientBuilder() {
       return WebClient.builder();

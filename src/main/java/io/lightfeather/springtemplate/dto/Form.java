@@ -1,13 +1,14 @@
 package io.lightfeather.springtemplate.dto;
 
 public class Form {
-
+    //Attributes
     private String firstName;
     private String lastName;
     private String email;
     private String phoneNumber;
     private String supervisor;
 
+    //Override of the toString() method.
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("First name: ").append(this.firstName).append("\n");
@@ -18,6 +19,7 @@ public class Form {
         return sb.toString();
     }
 
+    //Getters
     public String getFirstName(){
         return this.firstName;
     }
@@ -34,6 +36,7 @@ public class Form {
         return this.supervisor;
     }
 
+    //Setters
     public void setFirstName(String firstName) {
         this.firstName=firstName;
     }
