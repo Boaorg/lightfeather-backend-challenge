@@ -12,30 +12,14 @@ Unfortunately, I did not have time to learn about and implement requirements for
 - Gradle 7.2
 
 # Instructions
-Download the zip and open in the IDE of your choice. I personally used Visual Studio Code for this project.
-
-From there, Docker can be leveraged to build and run the application, making it accessible at localhost:8080 using the commands below.
-
-# Running locally with gradle
-gradle build
-gradle bootRun
-
-# Running with docker
-
-With Docker installed, you can build your a new image. This build needs to be run after any changes are made to the source code.
+1. Download the zip and extract. 
+2. Open in the IDE of your choice. (I personally used Visual Studio Code for this project.)
+3. Ensure you are in the working directory in the terminal.
+4. Run the following commands:
 ```
 docker build --tag=spring-template:latest .
 ```
-
-After the image builds successfully, run a container from that image.
 ```
 docker run -d --name spring-template -it -p8080:8080 spring-template:latest
 ```
-
-When you are done testing, stop the server and remove the container.
-```
-docker rm -f spring-template
-```
-
-# Running with docker-compose
-docker-compose up
+5. The container should then be running on localhost:8080.
